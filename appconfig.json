@@ -4,6 +4,12 @@
   "appUrl": "./index.html",
   "configUrl": "./appconfig.json",
   "iconUrl": "",
+  "defaultWidth": 190,
+  "defaultHeight": 80,
+  "minWidth": 190,
+  "minHeight": 80,
+  "maxWidth": 200,
+  "maxHeight": 100,
   "requestHandlers": [],
   "activators": [],
   "permissions": "overlay"
