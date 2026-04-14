@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    margin: 0;
+    background: rgba(20, 20, 20, 0.85);
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+  }
+
+  #container {
+    padding: 8px 12px;
+    border: 2px solid #3a2f1b;
+    background: linear-gradient(to bottom, #2b2418, #1a1712);
+    box-shadow: inset 0 0 8px #000;
+    display: inline-block;
+    border-radius: 6px;
+  }
+
+  #clock {
+    color: #ffd700;
+    font-size: 16px;
+    text-shadow: 1px 1px 2px #000;
+    letter-spacing: 0.5px;
+  }
+</style>
+</head>
+
+<body>
+<div id="container">
+  <div id="clock"></div>
+</div>
+
+<script>
+function updateClock() {
+  const now = new Date();
+
+  const options = {
+    month: 'short',
+    day: 'numeric',
+    year: 'numeric'
+  };
+
+  const datePart = now.toLocaleDateString('en-US', options);
+
+  let hours = now.getHours();
+  const minutes = String(now.getMinutes()).padStart(2, '0');
+  const ampm = hours >= 12 ? 'pm' : 'am';
+
+  hours = hours % 12 || 12;
+
+  document.getElementById("clock").innerText =
+    `${datePart} ${hours}:${minutes}${ampm}`;
+}
+
+setInterval(updateClock, 1000);
+updateClock();
+</script>
+</body>
+</html>
