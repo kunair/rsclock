@@ -1,7 +1,7 @@
 {
      "appName": "RS Clock",
-     "startFile": "clockrs.html",
+     "startFile": "index.html",
      "description": "Displays current date and time in your timezone",
      "iconUrl": "",
      "repositoryUrl": ""
-   }
+}
