@@ -1,8 +1,10 @@
 {
-     "appName": "RS Clock",
-     "startFile": "index.html",
-     "configUrl": "appconfig.json",
-     "description": "Displays current date and time in your timezone",
-     "iconUrl": "",
-     "repositoryUrl": ""
+  "appName": "RS Clock",
+  "description": "Display date and time as an overlay in-game.",
+  "appUrl": "index.html",
+  "configUrl": "appconfig.json",
+  "iconUrl": "",
+  "requestHandlers": [],
+  "activators": [],
+  "permissions": ""
 }
