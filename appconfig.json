@@ -1,10 +1,16 @@
 {
   "appName": "RS Clock",
   "description": "Display date and time as an overlay in-game.",
-  "appUrl": "index.html",
-  "configUrl": "appconfig.json",
+  "appUrl": "./index.html",
+  "configUrl": "./appconfig.json",
   "iconUrl": "",
+  "defaultWidth": 250,
+  "defaultHeight": 250,
+  "minWidth": 250,
+  "minHeight": 180,
+  "maxWidth": 1000,
+  "maxHeight": 1000,
   "requestHandlers": [],
   "activators": [],
-  "permissions": ""
+  "permissions": "pixel,overlay"
 }
