@@ -1,6 +1,7 @@
 {
      "appName": "RS Clock",
      "startFile": "index.html",
+     "configUrl": "appconfig.json",
      "description": "Displays current date and time in your timezone",
      "iconUrl": "",
      "repositoryUrl": ""
